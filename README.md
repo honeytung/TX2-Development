@@ -19,9 +19,9 @@ The process is confirmed working on host PC (MacBook Pro) running 18.04 using Pa
 
 By default the high performance Denver2 cores are switched off for power saving. You can enable the cores using the following commands (need sudo privilige):
 
-`echo 1 > /sys/devices/system/cpu/cpu1/online`
+`sudo sh -c "echo 1 > /sys/devices/system/cpu/cpu1/online"`
 
-`echo 1 > /sys/devices/system/cpu/cpu2/online`
+`sudo sh -c "echo 1 > /sys/devices/system/cpu/cpu2/online"`
 
 You can check core status using:
 
